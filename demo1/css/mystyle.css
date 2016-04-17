@@ -1,0 +1,248 @@
+@charset "UTF-8";
+
+*{
+    font-family: 微软雅黑,sans-serif;padding: 0;margin: 0;
+}
+ul{ list-style-type: none;margin: 0px}
+
+.bgimg{
+    background: url('../img/bgsucai01.jpg') no-repeat;
+    background-size: 100% 100%;
+ }
+/*navbar*/
+
+#Navbar{
+    width: 1170px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#Navbar .title {
+    float: left;
+    display: block;
+    font-size: 2em;
+    color:#337AB7;
+    padding-left: 50px;
+}
+.navtxt{
+    text-align: center;
+    float: right;
+    display: block;
+    font-size: 12px;
+    color:#337AB7;
+    height: 50px;
+    line-height: 50px;
+    min-width: 80px;
+    cursor: pointer;
+}
+.navtxt:hover{
+    color:white;
+    background-color: #337AB7;
+    font-size: 20px;
+}
+/*input area*/
+.container{
+    padding-top: 60px;
+    background-color: snow;
+    opacity: 0.9;
+    min-height: 800px;
+}
+.con{
+    width:600px;
+    height: 300px;
+    margin: 10px auto;
+}
+.head{
+    position: relative;
+    left: -100px;
+}
+.con textarea{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #BAD1FF;
+    padding: 10px;
+}
+
+.input{
+    width: 600px;
+    margin: 10px auto;
+    text-align: left;
+    overflow: hidden;
+}
+.input .ipt-tit{
+    float: left;
+    width: 395px;
+    height: 48px;
+    border: 1px solid #BAD1FF;
+    padding-left: 10px;
+    box-sizing: content-box;
+}
+.input .mybtn-2{
+    float: left;
+    width: 190px;
+    background-color: #337AB7;
+    height: 50px;
+    border: 1px solid #337AB7;
+    font-size: 20px;
+    color:white;
+}
+
+#navTab{
+    overflow: hidden;
+    cursor: pointer;
+}
+#navTab li{
+    display: block;
+    float:left;
+    width: 50%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: SNOW;
+}
+#navTab .hove{
+    color:white;
+    background-color:#337AB7 ;
+}
+
+/* today records*/
+#conlist{
+    position: absolute;
+    left: 0px;
+    top:50px;
+    width:100%;
+    height: auto;
+    cursor: pointer;
+}
+.contit{
+    display: block;
+    height:32px;
+    line-height: 32px;
+    color: snow;
+    background-color: #337AB7;
+    padding-left: 10px;
+}
+#conlist #icon1{
+    position: absolute;
+    right: 5px;
+    top:10px;
+    color: white;
+    font-size: 12px;
+}
+.icon1{
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+#conlist ul li,#hoslist ul li{
+    display: block;
+    height: 32px;
+    line-height: 32px;
+    background-color:#C4DDF5;
+    padding-left: 20px;
+    border-bottom: 1px solid white;
+    font-weight: bold;
+    display: none;
+}
+
+/*history*/
+#hoslist{
+    position: absolute;
+    left: 0px;
+    top:50px;
+    display: none;
+    width: 100%;
+    cursor: pointer;
+}
+
+#hoslist .histext{
+    display: none;
+    padding:10px 0px;
+    background-color: #337AB7;
+    text-align: center;
+}
+#hoslist #search{
+    width: 90%;
+    height: 40px;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: 1px solid #337AB7;
+}
+#hoslist .icon2{
+    position: absolute;
+    right: 25px;
+    top:20px;
+    font-size: 16px;
+    color:#337AB7;
+}
+#hoslist #icon3{
+    position: absolute;
+    right: 10px;
+    top:70px;
+    color: white;
+    font-size: 12px;
+}
+.icon3{
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+#hoslist .tip2{
+    display: none;
+    color: honeydew;
+    font-size: 12px;
+    text-align: left;
+    padding: 10px 20px;
+}
+/*detail*/
+#box_bg{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.4;
+    z-index: 998;
+    display: none;
+}
+#box_lg{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 600px;
+    min-height: 300px;
+    margin: -150px 0 0 -300px;
+    z-index: 999;
+    background-color: snow;
+    border-radius: 5px;
+    padding: 10px 20px;
+    box-shadow: 0 0 10px #000;
+    word-break: break-all;
+    display: none;
+}
+#box_lg .header{
+    height: 50px;
+    line-height: 50px;
+}
+
+#box_lg .time{
+    text-align: right;
+    margin: 50px 30px;
+}
+#box_lg .context{
+    text-indent: 2em;
+}
+#box_lg .close{
+    text-align: right;
+    font-size: 16px;
+    cursor: pointer;
+}
+#box_lg .del{
+    text-align: center;
+    margin-bottom: 20px;
+}
+

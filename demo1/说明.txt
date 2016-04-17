@@ -1,0 +1,5 @@
+服务器环境：php+mysql+apache(或者直接用xampp集成包)
+
+a.把根目录下的mydb.sql文件导入本地数据哭
+b.部署工程到本地apache服务器
+c.在浏览器url中输入：localhost/demo1/index.html即访问网站

@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/mystyle.css">
+    <link rel="stylesheet" href="css/login.css">
+
+</head>
+
+<body>
+    <!--header-->
+    <header id="Navbar">
+        <span class="title"><i class="fa fa-home" style="font-size: 100px"></i>时光屋</span>
+        <span id="rg" class="navtxt">注册</span>
+        <span id="lg" class="navtxt">登录</span>
+    </header>
+    <!--content-->
+    <div class="bgimg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8";>
+                    <h1 class="head"><b>我的便签</b><small>&nbsp;记录你的美好时光</small></h1>
+                    <div class="con" id="con">
+                        <textarea id="context" placeholder="记下你的点滴...."></textarea>
+                    </div>
+                    <div class="input">
+                        <input type="text" id="header" class="ipt-tit" placeholder="标题">
+                        <input type="button" class="mybtn-2" value="提交" onclick="Write()">
+                    </div>
+                </div>
+
+                <div class="col-md-3" style="padding:0px 0px;position: relative;min-height: 600px;border:1px solid #BAD1FF">
+                    <ul id="navTab">
+                        <li class="hove">今日时光</li>
+                        <li>历史时光</li>
+                    </ul>
+                    <div id="conlist">
+                        <div class="conlist-time">
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <ul></ul>
+                    </div>
+                    <div id="hoslist">
+                        <div class="histext">
+                            <input type="text" id="search" placeholder="输入格式年/月/日">
+                            <i class="fa fa-search icon2" onclick="searchList()"></i>
+                            <span class="tip2">*输入格式错误</span>
+                        </div>
+                        <span></span>
+                        <span></span>
+                        <ul></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--showdetail-->
+    <div id="box_lg">
+        <h6 class="close">×</h6>
+        <h3 class="header"></h3>
+        <hr>
+        <p class="context"></p>
+        <h6 class="time"></h6>
+        <div class="del">
+            <inpput type="button" class="btn btn-primary">删除便签</inpput>
+        </div>
+
+    </div>
+    <div id="box_bg"></div>
+
+
+    <!--login-->
+    <div id="login">
+        <div class="cls"><i class="fa fa-close"></i></div>
+        <div class="lg_head">
+            <span>时<i class="fa fa-home" style="font-size: 50px"></i>光</span>
+        </div>
+        <form id="fm1-info">
+            <div class="ipt-gp">
+                <i class="fa fa-user icon" style="font-size: 20px"></i>
+                <input type="text" name="txt1" class="ipt" placeholder="用户名">
+                <i class="fa fa-close icon-cls"></i>
+                <span class="tip">*用户名不能为空</span>
+            </div>
+            <div  class="ipt-gp">
+                <i class="fa fa-lock icon" style="font-size: 22px"></i>
+                <input type="password" name="txt2" class="ipt" placeholder="密码">
+                <i class="fa fa-close icon-cls"></i>
+                <span class="tip">*密码不能为空</span>
+            </div>
+            <div class="btn-gp">
+                <input type="button" class="mybtn mybtn-1" onclick="selForm(1)" value="登录">
+            </div>
+
+        </form>
+
+        <div class="label-gp">
+            <ul>
+                <li><i class="fa fa-qq"></i></li>
+                <li><i class="fa fa-weixin"></i></li>
+                <li><i class="fa fa-weibo"></i></li>
+                <li><a href="retutn false">立即注册</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!--register-->
+    <div id="register">
+        <div class="cls"><i class="fa fa-close"></i></div>
+        <div class="lg_head">
+            <span>时<i class="fa fa-home" style="font-size: 50px"></i>光</span>
+        </div>
+
+        <form id="fm2-info">
+            <div class="ipt-gp">
+                <i class="fa fa-user icon" style="font-size: 20px"></i>
+                <input type="text" name="txt1" class="ipt" placeholder="请输入用户名">
+                <i class="fa fa-close icon-cls"></i>
+                <span class="tip">*用户名不能为空</span>
+            </div>
+            <div class="ipt-gp">
+                <i class="fa fa-envelope icon" style="font-size: 16px"></i>
+                <input type="text" name="txt2" class="ipt" placeholder="输入邮箱">
+                <i class="fa fa-close icon-cls"></i>
+                <span class="tip">*请输入合法邮箱</span>
+            </div>
+            <div  class="ipt-gp">
+                <i class="fa fa-lock icon" style="font-size: 22px"></i>
+                <input type="password" name="txt3" class="ipt" placeholder="密码">
+                <i class="fa fa-close icon-cls"></i>
+                <span class="tip">*密码不能为空</span>
+            </div>
+            <div  class="ipt-gp">
+                <i class="fa fa-lock icon" style="font-size: 22px"></i>
+                <input type="password" name="txt4" class="ipt" placeholder="确认密码">
+                <i class="fa fa-close icon-cls"></i>
+                <span class="tip">*两次密码不一致</span>
+            </div>
+            <div class="btn-gp">
+                <input type="button" class="mybtn mybtn-1" onclick="selForm(2)" value="注册">
+            </div>
+        </form>
+
+        <div class="label-gp">
+            <ul>
+                <li><i class="fa fa-qq"></i></li>
+                <li><i class="fa fa-weixin"></i></li>
+                <li><i class="fa fa-weibo"></i></li>
+                <li><a href="retutn false">立即登录</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--script-->
+    <script src="js/jquery-2.2.1.min.js"></script>
+    <script src="js/ajax3.js"></script>
+    <script src="js/ajax1.js"></script>
+    <script src="js/ajax2.js"></script>
+    <script src="js/Animate.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/search.js"></script>
+</body>
+</html>
