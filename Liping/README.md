@@ -2,6 +2,9 @@
 
 网站没有用到什么比较复杂的技术，就是普通的js+jq+php+mysql，数据渲染就用ajax接口，要是早点熟练个MVVM框架什么的该多好，不过最近在学。。。
 
+网站链接：
+[荔评网](http://www.wozien.com/Dhk)
+
 网站首页：
 ![img](img/site.jpg)
 
