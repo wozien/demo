@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册/登录</title>
+    <link rel="stylesheet" href="css/css1.css"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <script src="js/jquery-2.2.1.min.js"></script>
+</head>
+
+<body class="body">
+
+<div class="main">
+    <img src="img/loginlogo.png" alt="淘课"/>
+    <h2 class="lg-title">与深大人分享你的知识、经验和见解</h2>
+
+    <div class="main-panel">
+        <ul>
+            <li>管理员登录</li>
+        </ul>
+        <div class="sign-in" style="display: block">
+            <form action="" id="sign-in-form">
+                <div class="sign-ipt">
+                    <input type="text" name="username" placeholder="用户名">
+                    <hr color="#e4e5e5">
+                    <input type="password" name="password" placeholder="密码">
+                </div>
+
+                <button type="button" class="sign-btn" id="btn-sign-in">登录</button>
+
+                <div class="label">
+                    <input type="checkbox" style="vertical-align: middle" id="rbme">
+                    <label for="rbme">&nbsp;&nbsp;记住我</label>
+                    <span>社交帐号登录</span>
+                    <div class="sign-icon">
+                        <i class="fa fa-weixin"></i>
+                        <i class="fa fa-qq"></i>
+                        <i class="fa fa-weibo"></i>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+</div>
+
+<div class="foot">
+    copyright &copy; webnoob
+</div>
+
+<div class="jump"><a href="index.php">跳过登录</a></div>
+<div class="jump" style="position: absolute;right: 90px"><a href="login.html">会员</a></div>
+<script>
+    $(function () {
+        //社交工具登录
+        $('.label>span').click(function () {
+            $(".sign-icon").fadeToggle(200);
+        })
+        //注册用户
+        $("#btn-sign-up").click(function () {
+
+            $.post("server/login.php?k=1",$("#sign-up-form").serialize(), function (rps) {
+
+                if(rps==="exist user"){
+                    alert("该用户已经存在");
+                }
+                else{
+                    location.pathname="Dhk/index.php";
+                }
+
+            });
+        });
+
+        //用户登录
+        $("#btn-sign-in").click(function () {
+
+            $.post("server/login.php?k=2",$("#sign-in-form").serialize(), function (rps) {
+
+                if(rps==="no user"){
+                    alert("不存在该用户");
+                }else if(rps==="no"){
+                    alert("密码错误");
+                }
+                else{
+                    location.pathname="Dhk/index.php";
+                }
+            })
+        })
+
+
+    })
+</script>
+
+</body>
+</html>

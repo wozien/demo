@@ -1,0 +1,238 @@
+@charset "utf-8";
+body{ padding: 0;margin: 0;font-family: "微软雅黑",Arial,Helvetica,sans-serif;font-size: 16px;}
+h1,h2,h3,h4,h5,h6,div,p,form,input,table,td,ul,ol,header,article,section,footer,nav{ padding: 0px;margin: 0px;}
+ul,ol{ list-style: none}
+a{ text-decoration: none;}
+
+.qmain{
+    width: 100%;
+    background-color: #f3f3f3;
+    padding: 20px 0px;
+}
+
+.cou{
+    width: 980px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 0 20px;
+    border: 1px solid #e8e8e8;
+}
+.cou-tit{
+    overflow: hidden;
+    font-size: 20px;
+    margin: 20px 0px;
+}
+
+.cou-tit a{
+    display: block;
+    float: right;
+    background-color: #f5f5f5;
+    color: #60bce3;
+    /*color: #9f9d9e;*/
+    font-size: 14px;
+    padding: 5px 10px;
+    margin-left:10px;
+    cursor: pointer;
+}
+.qmain hr{
+    border: 0px;
+    height: 1px;
+}
+
+.cou-list{
+    overflow: hidden;
+    margin: 20px 0px;
+}
+.cou-img{
+    float: left;
+}
+.cou-del{
+    float: left;
+    margin-left: 20px;
+    color:#9f9d9e;
+}
+.cou-del table{
+    border-collapse: collapse;
+}
+.cou-del table tr{
+    height: 40px;
+    vertical-align: middle;
+}
+.cou-del table td{
+    font-size: 14px;
+    width: 150px;
+    word-break: break-all;
+}
+td span{
+    color: #60bce3;
+}
+.des{
+    font-size: 14px;
+    text-indent: 60px;
+    color:#656565;
+    width: 500px;
+    /*word-break: break-all;*/
+    word-wrap: break-word;
+}
+
+/*点评页面样式*/
+.cou-write{
+    width: 980px;
+    background-color: white;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.write-form{
+    color:#999;
+    font-size: 14px;
+}
+
+.write-table{
+    border-collapse: collapse;
+}
+.write-table td{
+    padding: 10px;
+    vertical-align: top;
+}
+.write-table td i{
+    cursor: pointer;
+}
+.write-table tr td:nth-child(1){
+    width: 60px;
+    text-align: right;
+    height: 2em;
+}
+
+.level{
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #F3F3F3;
+    color:#666;
+    width: 4em;
+    margin-left: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+.level-hover{
+    background-color:#1CAAEA;
+    color:white;
+}
+#wcontent{
+    width: 800px;
+    height: 200px;
+    resize: none;
+    border-color:#ddd;
+    padding:10px;
+}
+.icon{
+    font-size: 16px;
+    color:#999;
+}
+.icon-act{
+    color:#1CAAEA;
+}
+.btn{
+    display: block;
+    float: right;
+    color:#999;
+    background-color: white;
+    width: 4em;
+    height: 2em;
+    border: 1px #999 solid;
+    border-radius: 2px;
+    margin-left: 5px;
+    font-family: "微软雅黑";
+    cursor: pointer;
+}
+.btn-sure{
+    border: 0px;
+    color:#1CAAEA;
+}
+.btn-sure:hover{
+    background-color:#1CAAEA ;
+    color:white;
+}
+.btn-back:hover{
+    color:#1CAAEA;
+    border-color: #1CAAEA;;
+}
+
+/* 评论列表样式 */
+.comment{
+    width: 1020px;
+    margin: 20px auto;
+    background-color: white;
+    border: 1px solid #e8e8e8;
+    min-height: 200px;
+}
+.com-tit{
+    padding: 10px 10px;
+    border-left: 3px solid #60bce3;
+    border-bottom: 1px solid #e8e8e8;
+}
+.com-item{
+    overflow: hidden;
+    border-bottom: 1px solid #e8e8e8;
+}
+.com-left{
+    padding: 20px;
+    float: left;
+    width: 180px;
+    background-color: #FBFBFD;
+    min-height: 200px;
+
+}
+.com-img{
+    display: block;
+    margin: 0 auto;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+.com-user{
+    text-align: center;
+    font-size: 14px;
+    color:#2D64B3;
+    margin-top:10px;
+}
+.com-right{
+    float:left;
+    position: relative;
+    padding:20px;
+    color:#656565;
+    font-size: 14px;
+    min-height: 200px;
+    width: 750px;
+}
+.com-time{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font-size: 12px;
+    color:#999;
+}
+.com-icon{
+    display: block;
+    margin: 0  auto;
+}
+.com-level{
+    width: 50px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 3px;
+    margin-bottom: 5px;
+}
+.level-3{
+    color:crimson;
+    border:1px solid crimson;
+}
+.level-2{
+    color:#FF9900;
+    border:1px solid #FF9900;
+}
+.level-1{
+    color: #339933;
+    border:1px solid #339933;
+}

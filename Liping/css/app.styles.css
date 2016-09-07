@@ -1,0 +1,118 @@
+body {
+font-size: 14px;
+line-height:1.3em;
+text-align:center;
+}
+
+a, a:visited {
+outline:none;
+}
+
+.clear {
+clear:both;
+}
+
+#wrapper {
+width:960px;
+margin:0 auto;
+text-align:left;
+margin-top:75px;
+}
+
+.swfupload {
+	vertical-align:top;
+}
+
+form {
+	margin-bottom:0px;
+}
+
+.center {
+	text-align:center;
+	clear:both;
+	margin-top:10px;
+}
+
+/**
+progress
+**/
+.progressWrapper {
+	width: 350px;
+	overflow: hidden;
+	float:left;
+}
+
+.progressContainer {
+	/* margin: 5px; */
+	padding: 4px;
+	border: solid 1px #8B0303;
+	background-color: #C8ACAB;
+	overflow: hidden;
+}
+/* Message */
+.message {
+	margin: 1em 0;
+	padding: 10px 20px;
+	border: solid 1px #FFDD99;
+	background-color: #FFFFCC;
+	overflow: hidden;
+}
+/* Error */
+.red {
+	border: solid 1px #B50000;
+	background-color: #FFEBEB;
+}
+
+/* Current */
+.green {
+	border: solid 1px #DDF0DD;
+	background-color: #EBFFEB;
+}
+
+/* Complete */
+.blue {
+	border: solid 1px #CEE2F2;
+	background-color: #F0F5FF;
+}
+
+.progressName {
+	font-size: 8pt;
+	font-weight: 700;
+	color: #555;
+	width: 323px;
+	height: 14px;
+	text-align: left;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.progressBarInProgress,
+.progressBarComplete,
+.progressBarError {
+	font-size: 0;
+	width: 0%;
+	height: 2px;
+	background-color: #8B0303;
+	margin-top: 2px;
+}
+
+.progressBarComplete {
+	width: 100%;
+	background-color: green;
+	visibility: hidden;
+}
+
+.progressBarError {
+	width: 100%;
+	background-color: red;
+	visibility: hidden;
+}
+
+.progressBarStatus {
+	margin-top: 2px;
+	width: 337px;
+	font-size: 7pt;
+	font-family: Arial;
+	text-align: left;
+	white-space: nowrap;
+}
